@@ -45,3 +45,30 @@ console.log(typeof anotherId);  // symbol
 //        Object  =>  object
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+// Reference (Non primitive)
+
+// Array, Objects, Functions
+
+
+let myYoutubename = "kashyap.dhamecha"
+
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+
+console.log(myYoutubename);    // hitesh@google.com
+console.log(anothername);      // hitesh@google.com   bcz it goes into heap not stack(stack provides copy of object heap giver same reference to object)
+
+let userOne = {
+    email : "user@google.com",
+    upi : "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "hitesh@google.com"
+
+console.log(userOne.email);      // hitesh@google.com
+console.log(userTwo.email);      // hitesh@google.com   bcz it goes into heap not stack(stack provides copy of object heap giver same reference to object)
+
