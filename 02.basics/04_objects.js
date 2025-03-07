@@ -45,10 +45,29 @@ const users = [
 ]
 
 users[1].email
-console.log(tinderUser);
+// console.log(tinderUser);
 // console.log(Object.keys(tinderUser));    // It will give the keys of the object([ 'id', 'name', 'isLoggedIn' ])
 // console.log(Object.values(tinderUser));  // It will give the values of the object([ '123abc', 'sammy', false ])
 // console.log(Object.entries(tinderUser)); // It will make Everything String
 
-console.log(tinderUser.hasOwnProperty("isLoggedIn"));   // true
-console.log(tinderUser.hasOwnProperty("isLogged"));   // false
+// console.log(tinderUser.hasOwnProperty("isLoggedIn"));   // true
+// console.log(tinderUser.hasOwnProperty("isLogged"));   // false
+
+
+const course ={
+    coursename : "js in hindi",
+    price : "999",
+    courseInstructor: "kashyap"
+}
+
+
+const {courseInstructor: instructor} = course
+
+// console.log(courseInstructor);   // Error when const {courseInstructor : instructor } = course
+console.log(instructor);   // kashyap
+
+// {
+//     "name" : "kashyap",
+//     "coursename" : "js in hindi",
+//     "price" : "free"
+// } 
