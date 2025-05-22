@@ -24,10 +24,10 @@ const myArr2 = new Array(1, 2, 3, 4)
 
 // console.log(myArr.indexOf(9));   // -1
 
-// const newArr = myArr.join()    // converts array to string 
+const newArr = myArr.join()    // converts array to string 
 
-// console.log(newArr);  
-// console.log(typeof newArr);  
+console.log(newArr);  
+console.log(typeof newArr);  
 
 // slice , splice
 
